@@ -1,0 +1,26 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $grey-color;
+  padding: $free-space;
+  margin-bottom: $free-space;
+  background-color: $white-color;
+
+  .top {
+    h2 {
+      margin-top: 0;
+    }
+  }
+
+  .body {
+    p {
+      text-align: justify;
+    }
+  }
+
+  .bottom {
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-between;
+  }
+}

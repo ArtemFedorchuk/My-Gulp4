@@ -1,0 +1,34 @@
+$black-color: rgba(51, 51, 51, 1);
+$white-color: rgba(255, 255, 255, 1);
+$grey-color: rgba(232, 232, 231, 1);
+$primary-color: rgba(8, 174, 241, 1);
+$secondary-color: rgba(217, 171, 77, 1);
+$free-space: 15px;
+$headerHeigh: 49px;
+$footerHeigh: 49px;
+
+@import 'reset';
+@import 'grid';
+@import 'general';
+@import 'typography';
+@import 'forms';
+
+html {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+  color: $black-color;
+  background-color: lighten($grey-color, 7);
+  padding-top: $headerHeigh + $free-space;
+}
+
+@import 'header';
+@import 'footer';
+@import 'components/post';
+@import 'components/auth';
